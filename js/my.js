@@ -10,7 +10,6 @@ $(document).ready(function() {
 
 		var clicked = $(this).find('a:first').attr('href');
 		$('.tab-container ' + clicked).fadeIn('fast');
-	}).eq(0).addClass('active');
-	
+	}).eq(0).addClass('active');	
 
 });
