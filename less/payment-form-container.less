@@ -1,7 +1,29 @@
 .payment-form-container {
 	background-color: #ffffff;
-	margin: 20px;
-	outline: 2px solid black;
+	margin-top: 40px;
+	padding-top: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-shadow: 0 0 25px 0px rgba(55, 55, 55, 0.2);
+
+	h1 {
+		margin: 0;
+		margin-bottom: 15px;
+		padding: 0;
+		text-align: center;
+	}
+
+	span {
+		display: block;
+		width: 250px;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 10px;
+		line-height: 16px;
+		font-style: italic;
+		color: #aeb2b7;
+		//border: 1px solid black;
+	}
 }
 
 .tabs {
@@ -10,7 +32,7 @@
 	margin: 0;
 	padding: 0;
 	margin: 0 auto;
-	margin-top: 25px;
+	margin-top: 40px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -20,12 +42,17 @@
 		margin: 0;
 		padding: 0;
 		list-style: none;
-		border: 1px solid #000000;
+		//border: 1px solid #000000;
 		border-radius: 5px;
 		background-color: #f3f4f7;
+		font-size: 12px;
+		text-align: center;
+		padding-top: 45px;
 
 		a {
 			text-decoration: none;
+			color: inherit;
+			font-weight: bold;
 			/*border: 1px solid #000000;
 			height: 100%;
 			width: auto;
@@ -35,19 +62,20 @@
 }
 
 li.active {	
-	border: 5px solid #0098cb;
+	border: 3px solid #0098cb;
 	background-color: #ffffff;
 }
 
 .tab-container {
-	width: 600px;
+	width: 650px;
 	min-height: 300px;
 	margin: 0 auto;
-	margin-top: 20px;
+	margin-top: 50px;
 }
 
 .tab-content {
 	width: auto;
 	height: 300px;
-	border: 2px solid #000000;
+	//border: 2px solid #000000;
 }
+
