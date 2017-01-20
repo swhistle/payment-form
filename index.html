@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+    	<meta charset="utf-8">
+    	<title>Billing Info</title>     	
+        <link href="css/normalize.css" rel="stylesheet">    
+        <link href="css/style.css" rel="stylesheet">                 
+    </head>
+    <body>   
+    	<div class="wrapper">   	
+	    	<div class="payment-form-container">
+	    		<h1>Billing Info</h1>
+	    		<span>Choose a payment option below and fill out the appropriate information</span>
+
+	    		
+    			<ul class="tabs">
+    				<li><a href="#tab1">Credit Card</a></li>
+    				<li><a href="#tab2">Gift Card</a></li>
+    				<li><a href="#tab3">Paypal</a></li>
+    			</ul>	    			
+	    		
+
+	    		<div class="tab-container">
+	    			<div id="tab1" class="tab-content">
+	    				<form class="payment-form">
+	    					<fieldset>
+	    						<legend>Billing Address</legend>
+	    						<label for="name">Full Name</label>
+	    						<input type="text" id="name" name="name" required>
+	    						<label for="address-1">Address 1</label>
+	    						<input type="text" id="address-1" name="address-1" required>
+	    						<label for="address-2">Address 2</label>
+	    						<input type="text" id="address-2" name="address-2" required>
+	    					</fieldset>
+
+	    					<fieldset>	
+	    						<legend>Credit Card Info</legend>
+	    						<label for="name-on-card">Name On Card</label>
+	    						<input type="text" id="name-on-card" name="name-on-card" required>
+	    						<label for="card-number">Card Number</label>
+	    						<input type="number" id="card-number" name="card-number" required>
+	    						<div class="add-info">
+	    							<p>
+	    								<label for="cvv">CVV Number</label>
+	    								<input type="number" id="cvv" name="cvv" min="100" max="999" required>
+	    							</p>
+	    							<p>
+	    								<label for="month">Exp.Month</label>
+	    								<select name="month">
+	    									<option value="january">Jan</option>
+	    									<option value="feb">Feb</option>
+	    									<option value="march">Mar</option>
+	    									<option value="ap">Apr</option>
+	    								</select>
+	    							</p>
+	    							<p>
+	    								<label for="">Exp.Year</label>
+	    								<select name="year">
+	    									<option value="2020">2020</option>
+	    									<option value="2019">2019</option>
+	    									<option value="2018">2018</option>
+	    									<option value="2017">2017</option>
+	    								</select>
+	    							</p>	    							
+	    						</div>
+	    						
+	    						<button type="submit">Pay</button>    						
+	    					</fieldset>
+
+
+	    					
+	    				</form>
+	    			</div>
+	    			<div id="tab2" class="tab-content">
+	    				ТАБ №2 
+	    			</div>
+	    			<div id="tab3" class="tab-content">
+	    				ТАБ №3 
+	    			</div>
+	    		</div>
+
+	    	</div> 	
+    	</div>
+   
+	</body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/my.js"></script>
+</html>
