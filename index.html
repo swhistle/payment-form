@@ -21,66 +21,66 @@
 
 	    		<div class="tab-container">
 	    			<div id="tab1" class="tab-content">
-	    				<form class="payment-form">
-	    					<fieldset>
-	    						<legend>Billing Address</legend>
-	    						<label for="name">Full Name</label>
-	    						<input type="text" id="name" name="name" required>
-	    						<label for="address-1">Address 1</label>
-	    						<input type="text" id="address-1" name="address-1" required>
-	    						<label for="address-2">Address 2</label>
-	    						<input type="text" id="address-2" name="address-2" required>
-	    					</fieldset>
+	    				<form class="payment-form" action="" method="post">
+	    					<div class="payment-form-wrapper">
+		    					<fieldset>
+		    						<legend>Billing Address</legend>
+		    						<label for="name">Full Name</label>
+		    						<input type="text" id="name" name="name" required>
+		    						<label for="address-1">Address 1</label>
+		    						<input type="text" id="address-1" name="address-1" required>
+		    						<label for="address-2">Address 2</label>
+		    						<input type="text" id="address-2" name="address-2" required>
+		    					</fieldset>
 
-	    					<fieldset>	
-	    						<legend>Credit Card Info</legend>
-	    						<label for="name-on-card">Name On Card</label>
-	    						<input type="text" id="name-on-card" name="name-on-card" required>
-	    						<label for="card-number">Card Number</label>
-	    						<input type="number" id="card-number" name="card-number" placeholder="0000-0000-0000-0000" pattern="[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}" required>
-	    						<div class="add-info">
-	    							<p>
-	    								<label for="cvv">CVV Number</label>
-	    								<input type="number" id="cvv" name="cvv" min="100" max="999" placeholder="CVV" required>
-	    								<a class="tooltip" href="#">?<span>Tooltip</span></a>
-	    							</p>	    							
-	    							<p>
-	    								<label for="month">Exp.Month</label>
-	    								<select name="month">
-	    									<option value="month">Month</option>
-	    									<option value="january">Jan.</option>
-	    									<option value="february">Feb.</option>
-	    									<option value="March">Mar.</option>
-	    									<option value="april">Apr.</option>
-	    									<option value="may">May</option>
-	    									<option value="june">Jun.</option>
-	    									<option value="july">Jul.</option>
-	    									<option value="august">Aug.</option>
-	    									<option value="september">Sept.</option>
-	    									<option value="october">Oct.</option>
-	    									<option value="november">Nov.</option>
-	    									<option value="december">Dec.</option>
-	    								</select>
-	    							</p>
-	    							<p>
-	    								<label for="">Exp.Year</label>
-	    								<select name="year">
-		    								<option value="year">Year</option>
-		    								<option value="2022">2022</option>
-		    								<option value="2021">2021</option>
-	    									<option value="2020">2020</option>
-	    									<option value="2019">2019</option>
-	    									<option value="2018">2018</option>
-	    									<option value="2017">2017</option>
-	    								</select>
-	    							</p>	    							
-	    						</div>
-	    						
-	    						<!--<button type="submit">Pay</button>   -->						
-	    					</fieldset>
-
-
-	    					
+		    					<fieldset>	
+		    						<legend>Credit Card Info</legend>
+		    						<label for="name-on-card">Name On Card</label>
+		    						<input type="text" id="name-on-card" name="name-on-card" required>
+		    						<label for="card-number">Card Number</label>
+		    						<input type="text" id="card-number" name="card-number" placeholder="0000-0000-0000-0000" required>
+		    						<div class="add-info">
+		    							<p>
+		    								<label for="cvv">CVV Number</label>
+		    								<input type="number" id="cvv" name="cvv" max="999" placeholder="CVV" required>
+		    								<a class="tooltip" href="#">?<span>Tooltip</span></a>
+		    							</p>	    							
+		    							<p>
+		    								<label for="month">Exp.Month</label>
+		    								<select name="month">
+		    									<option value="month">Month</option>
+		    									<option value="january">Jan.</option>
+		    									<option value="february">Feb.</option>
+		    									<option value="March">Mar.</option>
+		    									<option value="april">Apr.</option>
+		    									<option value="may">May</option>
+		    									<option value="june">Jun.</option>
+		    									<option value="july">Jul.</option>
+		    									<option value="august">Aug.</option>
+		    									<option value="september">Sept.</option>
+		    									<option value="october">Oct.</option>
+		    									<option value="november">Nov.</option>
+		    									<option value="december">Dec.</option>
+		    								</select>
+		    							</p>
+		    							<p>
+		    								<label for="">Exp.Year</label>
+		    								<select name="year">
+			    								<option value="year">Year</option>
+			    								<option value="2022">2022</option>
+			    								<option value="2021">2021</option>
+		    									<option value="2020">2020</option>
+		    									<option value="2019">2019</option>
+		    									<option value="2018">2018</option>
+		    									<option value="2017">2017</option>
+		    								</select>
+		    							</p>	    							
+		    						</div>	    						
+		    												
+		    					</fieldset>		    					
+		    				</div>
+		    				<button type="submit" class="btn-pay">Pay</button>
+	    						    					
 	    				</form>
 	    			</div>
 	    			<div id="tab2" class="tab-content">
@@ -96,5 +96,6 @@
    
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/my.js"></script>
+	<script src="js/tab.js"></script>
+	<script src="js/card-number.js"></script>
 </html>
