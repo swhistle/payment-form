@@ -299,7 +299,7 @@ a.tooltip span:after {
 }
 a:hover.tooltip span {
   visibility: visible;
-  opacity: 0.6;
+  opacity: 1;
   top: 40px;
   left: -85px;
   z-index: 999;
