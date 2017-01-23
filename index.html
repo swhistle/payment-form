@@ -10,7 +10,7 @@
     	<div class="wrapper">   	
 	    	<div class="payment-form-container">
 	    		<h1>Billing Info</h1>
-	    		<span>Choose a payment option below and fill out the appropriate information</span>
+	    		<span class="choose-payment">Choose a payment option below and fill out the appropriate information</span>
 	    		
     			<ul class="tabs">
     				<li><a href="#tab1">Credit Card</a></li>
@@ -38,7 +38,7 @@
 		    						<label for="name-on-card">Name On Card</label>
 		    						<input type="text" id="name-on-card" name="name-on-card" required>
 		    						<label for="card-number">Card Number</label>
-		    						<input type="text" id="card-number" name="card-number" placeholder="0000-0000-0000-0000" required>
+		    						<input type="text" id="card-number" name="card-number" placeholder="0000-0000-0000-0000" maxlength='25' required>
 		    						<div class="add-info">
 		    							<p>
 		    								<label for="cvv">CVV Number</label>
@@ -79,6 +79,7 @@
 		    												
 		    					</fieldset>		    					
 		    				</div>
+		    				<span class="info-review">Please review your information on this page to make sure it's correct. Click 'Pay' to complete your purchase.</span>
 		    				<button type="submit" class="btn-pay">Pay</button>
 	    						    					
 	    				</form>
@@ -98,4 +99,5 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/tab.js"></script>
 	<script src="js/card-number.js"></script>
+	<script src="js/cvv.js"></script>	
 </html>
